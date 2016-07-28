@@ -302,12 +302,12 @@ class ImeiController extends Controller
         // $model = new Imei();
         // $warehouseCurrent = ArrayHelper::map(Warehouse::find()->all(),'warehouse_id','label');
 
-        // return $this->render('create-lot', [
-        //     'model' => $model,
-        //     'warehouseCurrent' => $warehouseCurrent,
-        //     // 'items' => $items,
-        //     'data' => [],
-        // ]);
+        return $this->render('create-lot', [
+            'model' => $model,
+            'warehouseCurrent' => $warehouseCurrent,
+            // 'items' => $items,
+            'data' => [],
+        ]);
     }
 
     /**
